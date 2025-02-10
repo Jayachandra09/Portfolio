@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Sai Venkat Ramana Portfolio</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  >
+  
+  <!-- Font Awesome (for social icons) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  >
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link 
+    rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto+Mono:wght@300;700&display=swap"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar navbar-expand-lg navbar-dark steel-navbar fixed-top">
+    <div class="container">
+      <!-- CHANGED BRAND: from SteelVision to your name -->
+      <a class="navbar-brand" href="#">
+        Sai Venkat<span> Ramana</span>
+      </a>
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects-section">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /NAVBAR -->
+
+  <!-- ========== HERO SECTION ========== -->
+  <header id="home" class="hero-section d-flex align-items-center reveal">
+    <!-- Floating shapes (optional) -->
+    <div class="floating-shapes">
+      <img src="img/shape1.png" alt="shape1" class="shape shape1">
+      <img src="img/shape2.png" alt="shape2" class="shape shape2">
+      <img src="img/shape3.png" alt="shape3" class="shape shape3">
+    </div>
+
+    <div class="container hero-content text-center text-light">
+      <h1 class="hero-title mb-3">
+        Welcome, I'm <span>Sai Venkat Ramana</span>
+      </h1>
+      <p class="hero-subtitle mb-4">
+        Master of Information Systems | Java Full Stack Developer
+      </p>
+      <button 
+        class="btn btn-accent btn-glow px-4 py-2" 
+        onclick="document.getElementById('about-section').scrollIntoView({ behavior:'smooth' })"
+      >
+        Explore
+      </button>
+    </div>
+    <!-- Wave divider -->
+    <div class="hero-wave-divider"></div>
+  </header>
+  <!-- /HERO SECTION -->
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about-section" class="about-section position-relative reveal">
+    <div class="about-diagonal-bg"></div>
+    <div class="container py-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <div class="profile-wrap">
+            <img src="img/profile.jpg" alt="Profile" class="profile-img" />
+          </div>
+          <h3 class="mt-3">Sai Venkat Ramana</h3>
+          <!-- OVERRIDDEN COLOR: 'text-muted' replaced with a custom class to ensure visibility -->
+          <p class="small text-light-info">
+            700 N Adelaide Street | Illinois, IL 61761 <br />
+            Email: dasavenkatramana@gmail.com <br />
+            Phone: 309-585-5491
+          </p>
+        </div>
+        <div class="col-lg-8 text-light">
+          <h2 class="section-title mb-3">About Me</h2>
+          <p>
+            I’m currently pursuing a Master of Information Systems 
+            at Illinois State University (anticipated May 2025). 
+            Previously, I earned my Bachelor of Technology in 
+            Computer Science and Engineering (2022) with a GPA of 8.23/10.00 
+            from Anurag Engineering College in India.
+          </p>
+          <p>
+            I have experience as a Project Engineer at Wipro (Bangalore, India), 
+            where I specialized in Java Full Stack development and worked on 
+            web/mobile applications using Java, Angular, HTML, and CSS. 
+            Outside of tech, I love playing badminton and volunteer work!
+          </p>
+        </div>
+      </div>
+
+      <!-- TIMELINE-LIKE HIGHLIGHTS FOR EDUCATION & WORK -->
+      <div class="timeline-container text-light">
+        <h4 class="text-accent mb-4">Education & Experience</h4>
+        <div class="timeline">
+          <!-- Education: Illinois State -->
+          <div class="timeline-item reveal fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="fw-bold">2023 - 2025: Master of Information Systems</h5>
+              <p>
+                Illinois State University, Normal, IL<br>
+                <strong>Coursework:</strong> DBMS, Software Engineering, System Analysis &amp; Design
+              </p>
+            </div>
+          </div>
+          <!-- Education: Anurag -->
+          <div class="timeline-item reveal fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="fw-bold">2018 - 2022: Bachelor of Technology (CSE)</h5>
+              <p>
+                Anurag Engineering College, India (GPA: 8.23/10.00)<br>
+                <strong>Coursework:</strong> Applied ML, Data Mining, OS, Stats, Linear Algebra
+              </p>
+            </div>
+          </div>
+          <!-- Work: Wipro -->
+          <div class="timeline-item reveal fade-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h5 class="fw-bold">Aug 2022 – Jul 2023: Project Engineer</h5>
+              <p>
+                Wipro Limited, Bangalore, India<br>
+                - Completed Java Full Stack training, promoted to Project Engineer<br>
+                - Created, customized, and developed web/mobile apps in Java, Angular, HTML/CSS<br>
+                - Built solutions per client requirements
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="text-light mt-5">
+        <h4 class="text-accent mb-3">Skills</h4>
+        <p>
+          <strong>Languages:</strong> C, Java, Python, JavaScript <br />
+          <strong>Databases:</strong> SQL (MySQL) <br />
+          <strong>Mathematics:</strong> Probability &amp; Statistics, Linear Algebra
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- /ABOUT SECTION -->
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects-section" class="project-section position-relative reveal">
+    <div class="project-wave-top"></div>
+    <div class="container py-5">
+      <h2 class="section-title text-accent mb-4">My Projects</h2>
+
+      <!-- Fitnity -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6 mb-4 mb-md-0 text-center reveal fade-right">
+          <img 
+            src="img/project1.jpg" 
+            alt="Fitnity – The Fitness Website" 
+            class="img-fluid project-img"
+          >
+        </div>
+        <div class="col-md-6 text-light reveal fade-left">
+          <h4 class="mb-2">Fitnity – The Fitness Website</h4>
+          <p class="mb-3">
+            Developed a website to empower people to create healthy training habits 
+            and promote high-quality physical activities.
+          </p>
+          <a 
+            href="#" 
+            target="_blank" 
+            class="btn btn-accent btn-glow"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Rice Leaf Disease Classification -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6 mb-4 mb-md-0 text-center reveal fade-left">
+          <img 
+            src="img/project2.jpg" 
+            alt="Rice Leaf Disease Classification" 
+            class="img-fluid project-img"
+          >
+        </div>
+        <div class="col-md-6 text-light reveal fade-right">
+          <h4 class="mb-2">Rice Leaf Disease Classification</h4>
+          <p class="mb-3">
+            Built a deep learning model to identify the type of disease affecting a rice leaf, 
+            and provide recommended pesticides for treatment.
+          </p>
+          <a 
+            href="#" 
+            target="_blank" 
+            class="btn btn-accent btn-glow"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+
+      <!-- Diabetes Prediction -->
+      <div class="row align-items-center reveal">
+        <div class="col-md-6 mb-4 mb-md-0 text-center reveal fade-right">
+          <img 
+            src="img/project3.jpg" 
+            alt="Diabetes Prediction" 
+            class="img-fluid project-img"
+          >
+        </div>
+        <div class="col-md-6 text-light reveal fade-left">
+          <h4 class="mb-2">Diabetes Prediction</h4>
+          <p class="mb-3">
+            Proposed a technique for early detection of diabetes using 
+            machine learning models (Flask-based).
+          </p>
+          <a 
+            href="#" 
+            target="_blank" 
+            class="btn btn-accent btn-glow"
+          >
+            View Project
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /PROJECTS SECTION -->
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact-section" class="contact-section position-relative reveal">
+    <div class="contact-angle-top"></div>
+    <div class="container py-5 text-light">
+      <h2 class="section-title text-center mb-4">Contact Me</h2>
+      <div class="row g-5">
+        <!-- Contact Form -->
+        <div class="col-md-6 reveal fade-right">
+          <div class="contact-card p-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input 
+                  type="text" 
+                  class="form-control steel-input" 
+                  id="name" 
+                  placeholder="Your Name" 
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input 
+                  type="email" 
+                  class="form-control steel-input" 
+                  id="email" 
+                  placeholder="you@example.com" 
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input 
+                  type="text" 
+                  class="form-control steel-input" 
+                  id="subject" 
+                  placeholder="Inquiry about..."
+                  required
+                >
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input 
+                  type="tel" 
+                  class="form-control steel-input" 
+                  id="phone" 
+                  placeholder="+1 234 567 890"
+                >
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea 
+                  class="form-control steel-input" 
+                  id="message" 
+                  rows="4" 
+                  placeholder="Say hello..." 
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-accent w-100 mt-2 btn-glow">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Contact Info -->
+        <div class="col-md-6 reveal fade-left">
+          <div class="p-3">
+            <h4 class="text-accent mb-3">Get in Touch</h4>
+            <p class="mb-3">
+              Feel free to reach out about new project opportunities 
+              or to chat about machine learning and software development.
+            </p>
+            <p class="mb-1">
+              <strong>Email:</strong> 
+              <a href="mailto:dasavenkatramana@gmail.com" class="text-accent">
+                dasavenkatramana@gmail.com
+              </a>
+            </p>
+            <p class="mb-3">
+              <strong>Phone:</strong> 309-585-5491
+            </p>
+            <div class="map-placeholder text-center bg-dark p-3 rounded">
+              <small class="text-muted">[Optional] Google Map here</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /CONTACT SECTION -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="py-3 steel-footer text-center text-light">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Sai Venkat Ramana</p>
+      <div class="social-links">
+        <a 
+          href="#" 
+          class="text-light mx-2" 
+          target="_blank" 
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <a 
+          href="#" 
+          class="text-light mx-2" 
+          target="_blank" 
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a 
+          href="#" 
+          class="text-light mx-2" 
+          target="_blank"
+          aria-label="Twitter"
+        >
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- /FOOTER -->
+
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
