@@ -19,3 +19,5 @@ my-portfolio/
     └── project3.jpg
 
 Add your images Accordingly
+
+goto readme and see it as a **Raw**
