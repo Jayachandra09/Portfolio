@@ -20,4 +20,4 @@ my-portfolio/
 
 Add your images Accordingly
 
-goto readme and see it as a **Raw**
+goto readme and open it as a **Raw**
